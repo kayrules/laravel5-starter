@@ -23,13 +23,13 @@ $ composer install
 ---
 After composer finished install the dependencies, it should automatically change the storage and cache folders permission to 777. Just incase if it's not did as expected, you need to manually change it recursively as command below.
 ```
-$ chmod -R 777 app/storage/
+$ chmod -R 777 storage/
 $ chmod -R 777 bootstrap/cache/
 ```
 
 ###2. Database Config
 ---
-Before run the migration command, you need to create a new database for this project and update the login information under `app/config/database.php`
+Before run the migration command, you need to create a new database for this project and update the login information under `config/database.php`
 
 ###3. Initial Migration
 ---
