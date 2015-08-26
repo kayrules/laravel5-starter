@@ -1,6 +1,6 @@
 {
     "name": "kayrules/laravel5-starter",
-    "description": "The Laravel 4.2 Starter CMS Template with Bootstrap.",
+    "description": "The Laravel 5 Starter CMS Template with Bootstrap.",
     "keywords": ["framework", "laravel 5", "bootstrap", "cms", "theme", "starter"],
     "license": "MIT",
     "type": "project",
