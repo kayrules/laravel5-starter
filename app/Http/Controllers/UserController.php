@@ -72,7 +72,7 @@ class UserController extends Controller
         if(!count($errors)) {
             $user = User::create(array(
                 'email'    => $request->input('email'),
-                'password' => $request->input('password'),
+                'password' => bcrypt($request->input('password')),
                 'name' => $request->input('name')
             ));
 
@@ -144,7 +144,7 @@ class UserController extends Controller
             $user = User::find($id);
             $user->email = $request->input('email');
             $user->name = $request->input('name');
-            if($request->has('password')) $user->password = $request->input('password');
+            if($request->has('password')) $user->password = bcrypt($request->input('password'));
             $user->save();
 
             $ug = UserGroup::where('user_id', $id);
